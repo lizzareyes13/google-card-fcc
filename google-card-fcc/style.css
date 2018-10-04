@@ -1,6 +1,7 @@
 :root {
   --page-bkg: #C8A2C8;
   --card-bkg: #fff;
+  box-sizing: border-box;
 }
 
 body {
@@ -14,7 +15,7 @@ body {
   width:50%;
   padding: 10px;
   margin-left: 25em;
-  margin-top: 5%;
+  margin-top: 20%;
   margin-bottom: 5%;
   padding-bottom: 1.5em;
 }
@@ -34,4 +35,11 @@ body {
 
 #larry-link{
   margin-right: 1em;
+}
+
+@media screen and (max-width: 800px) {
+  .main-card{
+    width: 25%;
+    margin-left: 10px;
+  }
 }
