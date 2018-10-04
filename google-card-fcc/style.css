@@ -1,0 +1,37 @@
+:root {
+  --page-bkg: #C8A2C8;
+  --card-bkg: #fff;
+}
+
+body {
+  background: var(--page-bkg);
+}
+
+.main-card {
+  background: var(--card-bkg);
+  border-radius: 10px;
+  border-width: 2px;
+  width:50%;
+  padding: 10px;
+  margin-left: 25em;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-bottom: 1.5em;
+}
+
+.header {
+  text-align: center;
+}
+
+.info {
+  text-align: center;
+}
+
+.links {
+  text-align: center;
+  margin-right:25px;
+}
+
+#larry-link{
+  margin-right: 1em;
+}
