@@ -1,22 +1,24 @@
 :root {
-  --page-bkg: #C8A2C8;
-  --card-bkg: #fff;
+  --lilac: #C8A2C8;
+  --white: #fff;
+  --bubble-gum: #F58092;
+  --candy-green: #72D79D;
   box-sizing: border-box;
 }
 
 body {
-  background: var(--page-bkg);
+  background: var(--lilac);
 }
 
 .main-card {
-  background: var(--card-bkg);
+  background: var(--bubble-gum);
   border-radius: 10px;
   border-width: 2px;
   width:50%;
   padding: 10px;
-  margin-left: 25em;
-  margin-top: 20%;
-  margin-bottom: 5%;
+  margin-left: 24em;
+  margin-top: 5%;
+/*   margin-bottom: 5%; */
   padding-bottom: 1.5em;
 }
 
@@ -37,9 +39,45 @@ body {
   margin-right: 1em;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1250px) {
+  body {
+    background: var(--candy-green);
+  }
+  .main-card {
+    background: var(--lilac);
+    width: 50%;
+    margin-left: 17em;
+  }
+}
+
+@media screen and (max-width:1000px) {
   .main-card{
-    width: 25%;
-    margin-left: 10px;
+    width: 70%;
+    margin-left: 8em;
+    background: var(--lilac);
+  }
+  body {
+    background: var(--bubble-gum);
+  }
+}
+
+@media screen and (max-width:800px) {
+  .main-card{
+    width: 55%;
+    margin-left: 11em;
+    background: var(--bubble-gum)
+  }
+  body{
+    background: var(--candy-green)
+  }
+}
+
+@media screen and (max-width: 450px){
+  body {
+    background: var(--lilac);
+  }
+  .main-card {
+    background: var(--candy-green);
+    margin-left: 5.5em;
   }
 }
